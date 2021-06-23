@@ -37,38 +37,30 @@ body {
 	margin:auto;
 	max-width: 1400px;
 	height: 500px;
-	margin:auto;
 	max-width: 1400px;
 	background-color:#FF6B00;
 
 
-
 }
 
-.boxinteirodentro {
-	display: flex;
-	width: 100%;
-	max-width: 1400px;
-	background-color: #F0F0F0;
-	background-color:#FF6B00;
-
-	
-}
 
 .boxdireito {
 	width: 50%;
+	height: 400px;
 	margin:auto;
 	text-align: center;
+	align-items: center;
 
-	
-
-	background-color:#FF6B00;
 }
+
+
 .boxesquerdo {
 	width: 100%;
 	margin:auto;
 	text-align: center;
-	background-color:#FF6B00;
+
+
+	
 }
 
 .boxesquerdo h1 {
