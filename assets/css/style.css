@@ -160,8 +160,8 @@ body {
 .fechar {
 	z-index:2;
 	position: relative;
-	top: -40px;
-	left: 385px;
+	top: -39px;
+	left: 390px;
 	width: 40px;
 	height: 40px;
 	background-color: blue;
@@ -325,7 +325,7 @@ body {
 }
 
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1202px) {
 	.boxdireito {
 		display: none;
 	}
@@ -350,6 +350,16 @@ body {
 		width: 100%;
 	}
 }
+
+@media only screen and (max-width: 990px) {
+	.box1modal {
+		display: none;
+	}
+	.box2modal {
+		width: 100%;
+	}
+}
+
 
 @media only screen and (max-width: 475px) {
 	.boxx2 {
