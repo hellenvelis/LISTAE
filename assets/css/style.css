@@ -158,10 +158,8 @@ body {
 	text-align:    center;
 }
 .fechar {
+	float: right;
 	z-index:2;
-	position: relative;
-	top: -39px;
-	left: 390px;
 	width: 40px;
 	height: 40px;
 	background-color: blue;
@@ -310,6 +308,11 @@ body {
 	align-items: center;
 	width: 100%;
 }
+
+.container3box1 {
+	text-align: right;
+}
+
 
 @media only screen and (max-width: 1202px) {
 	#img {
