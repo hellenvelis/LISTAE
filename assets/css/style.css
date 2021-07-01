@@ -35,31 +35,69 @@ body {
 	width: 100%;
 	height: 490px;
 	margin:auto;
-	max-width: 1400px;
-	height: 500px;
-	max-width: 1400px;
-	background-color:#FF6B00;
 
+	height: 500px;
+	
+	background-image: linear-gradient(to right, #FFAF0D, #FF6A00, #FF6A00, #E8470C, #FF6A00, #FFAF0D);
+	background-size: 500% 100%;
+	animation-name: degrade;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+
+
+}
+
+@keyframes degrade{
+	0%{
+		background-position-x:0%;
+	}
+	100% {
+		background-position-x: 100%;
+	}
 
 }
 
 
 .boxdireito {
+	position: relative;
 	width: 50%;
 	height: 400px;
 	margin:auto;
 	text-align: center;
 	align-items: center;
 
+
 }
 
+.boxdireito img {
+	position: relative;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	
+}
+
+.boxdireito img:after{
+
+	width: 100%;
+	height: 100%;
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	z-index: -1;
+}
+
+.boxdireito img:hover{
+	transform:scale(1.25,1.25);
+}
+.boxdireito img:hover:after{
+	opacity: 1;
+
+}
 
 .boxesquerdo {
-	width: 100%;
+	width: 70%;
 	margin:auto;
 	text-align: center;
-
-
+	padding-left: 50px;
 	
 }
 
@@ -73,12 +111,12 @@ body {
 	
 
 	color:white;
-	background-color:#FF6B00;
+	
 }
 
 .boxesquerdo p {
 	color:white;
-	background-color:#FF6B00;
+	
 
 }
 
@@ -98,7 +136,7 @@ body {
 	display: flex;
 	width: 800px;
 	justify-content: space-between;
-	background-color: #FF791C;
+	
 	width: 800px;
 	justify-content: space-around;
 	
@@ -120,9 +158,14 @@ body {
 	color:white;
 	padding-top: 30px;
 	width: 100%;
-	background-color: #F76400;
+	background-image: linear-gradient(to right,#FFAF0D, #FF6A00, #FF6A00, #FFAF0D);
 	padding-top: 50px;
 	width: 100%;
+	background-size: 500% 100%;
+	animation-name: degrade;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 .box2 {
@@ -190,7 +233,7 @@ body {
 .container {
 
 	display: flex;
-	background-color: #FF791C;
+	
 	width: 800px;
 	justify-content: space-around;
 	
@@ -314,6 +357,23 @@ body {
 }
 
 
+.listra1 {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	margin:auto;
+	
+	background-color:#FF803F;
+}
+.listra2 {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	margin:auto;
+	
+	background-color:#FFA96F;
+}
+
 @media only screen and (max-width: 1202px) {
 	#img {
 		width: 100%;
@@ -369,7 +429,7 @@ body {
 		width: 100%;
 	}
 	.form-control {
-		width: 100% !important;
+		
 	}
 }
 
