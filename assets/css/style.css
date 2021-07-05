@@ -203,7 +203,12 @@ body {
 }
 
 .modal-body {
-	background-color: #FF791C !important;
+	background-image: linear-gradient(to right, #FFAF0D, #FF6A00, #FF6A00, #E8470C, #FF6A00, #FFAF0D);
+	background-size: 500% 100%;
+	animation-name: degrade;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 .botaobox {
@@ -232,6 +237,17 @@ body {
 	align-items: center !important;
 	justify-content: center !important;
 	margin:auto !important;
+}
+
+.btn-warning {
+
+	background-image: linear-gradient(to right, #FFAF0D, #FF6A00, #FF6A00, #E8470C, #FF6A00, #FFAF0D) !important;
+	background-size: 500% 100%;
+	animation-name: degrade;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	color:white !important;
 }
 
 .img-logo {
